@@ -58,5 +58,19 @@ one();
 
 console.log(a);  //error because a is not defined beyond the function
 
+Block scope
+A block scope is the area within if, switch conditions or for and while loops. Generally speaking, whenever you see {curly brackets}, it is a block. In ES6, const and let keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding block
 
+
+
+
+promise-
+promise is used to ensure the event loop that a particular operation will definitely provide an output.
+promise function takes in two parameters one of which is a remote function which itself has two other functions as parameters resolve and reject.
+
+let a=newPromise((resolve,reject)=>{resolve(data) or reject(error)},
+program-
+let a=new Promise((resolve,reject)=>{resolve("hi");})
+a.then((value)=>{console.log(value)})
+.catch((value)=>{});
 
