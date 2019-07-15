@@ -35,11 +35,28 @@ var fruit = 'apple'
 console.log(fruit);        //apple
 
 function getFruit(){
+    
     console.log(fruit);    //fruit is accessible here
+
 }
 
 getFruit();                //apple
 
 Function Scope -
-variables declared inside a function become limited to the function and considered in the corresponding function scope, i.e cannot be used outside the function 
+variables declared inside a function become limited to the function and considered in the corresponding function scope, i.e cannot be used outside the function in which it is declared
+
+ex-
+
+function one() {
+  
+    var a = 4;
+  
+
+      
+}
+one();
+
+console.log(a);  //error because a is not defined beyond the function
+
+
 
