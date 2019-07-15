@@ -59,7 +59,38 @@ one();
 console.log(a);  //error because a is not defined beyond the function
 
 Block scope
-A block scope is the area within if, switch conditions or for and while loops. Generally speaking, whenever you see {curly brackets}, it is a block. In ES6, const and let keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding block
+whenever you see {curly brackets}, it is a block. const and let keywords allow us to declare variables in the block scope, which means those variables exist only within the corresponding block
+
+ex-
+function foo(){
+   
+   if(true){
+        
+        var fruit1 = 'apple';        //exist in function scope
+        
+        const fruit2 = 'banana';     //exist in block scope
+        
+        let fruit3 = 'strawberry';   //exist in block scope
+
+    }
+    
+    console.log(fruit1);
+    
+    console.log(fruit2);
+    
+    console.log(fruit3);
+
+}
+
+foo();
+
+//result:
+
+//apple
+
+//error: fruit2 is not defined
+
+//error: fruit3 is not defined
 
 
 
